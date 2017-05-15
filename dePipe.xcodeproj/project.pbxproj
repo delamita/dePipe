@@ -20,15 +20,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		BB0CDACF1EC9921B0082FBE3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BB0CDAB01EC978B20082FBE3 /* dePipe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dePipe; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0CDAB31EC978B20082FBE3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BB0CDAD11EC9921B0082FBE3 /* pipe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pipe; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BB0CDAAD1EC978B20082FBE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0CDACE1EC9921B0082FBE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				BB0CDAB01EC978B20082FBE3 /* dePipe */,
+				BB0CDAD11EC9921B0082FBE3 /* pipe */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +100,23 @@
 			productReference = BB0CDAB01EC978B20082FBE3 /* dePipe */;
 			productType = "com.apple.product-type.tool";
 		};
+		BB0CDAD01EC9921B0082FBE3 /* pipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0CDAD51EC9921B0082FBE3 /* Build configuration list for PBXNativeTarget "pipe" */;
+			buildPhases = (
+				BB0CDACD1EC9921B0082FBE3 /* Sources */,
+				BB0CDACE1EC9921B0082FBE3 /* Frameworks */,
+				BB0CDACF1EC9921B0082FBE3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pipe;
+			productName = pipe;
+			productReference = BB0CDAD11EC9921B0082FBE3 /* pipe */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +127,11 @@
 				ORGANIZATIONNAME = Crazzy;
 				TargetAttributes = {
 					BB0CDAAF1EC978B20082FBE3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VZJHX8LXGH;
+						ProvisioningStyle = Automatic;
+					};
+					BB0CDAD01EC9921B0082FBE3 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = VZJHX8LXGH;
 						ProvisioningStyle = Automatic;
@@ -111,6 +151,7 @@
 			projectRoot = "";
 			targets = (
 				BB0CDAAF1EC978B20082FBE3 /* dePipe */,
+				BB0CDAD01EC9921B0082FBE3 /* pipe */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0CDAB41EC978B20082FBE3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0CDACD1EC9921B0082FBE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +280,22 @@
 			};
 			name = Release;
 		};
+		BB0CDAD61EC9921B0082FBE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VZJHX8LXGH;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB0CDAD71EC9921B0082FBE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VZJHX8LXGH;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -249,6 +313,14 @@
 			buildConfigurations = (
 				BB0CDAB81EC978B20082FBE3 /* Debug */,
 				BB0CDAB91EC978B20082FBE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB0CDAD51EC9921B0082FBE3 /* Build configuration list for PBXNativeTarget "pipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0CDAD61EC9921B0082FBE3 /* Debug */,
+				BB0CDAD71EC9921B0082FBE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
